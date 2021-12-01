@@ -6,8 +6,9 @@ var removeDuplicates = function(nums) {
    } else {
      nums[right - count] = nums[right]
    }
-   return nums.length - count
   }
+
+  return nums.length - count
 };
 
 var arr = [0, 0, 1, 1, 1, 2, 2, 3, 4, 4, 5]
