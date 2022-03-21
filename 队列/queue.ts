@@ -3,14 +3,15 @@
  * dequeue()：移除第一项，并返回被移除的元素
  * peek()：返回队列中的第一个元素，队列不做任何变动
  * isEmpty()：如果队列中不包含任何元素，返回true，否则返回false
+ * clear(): 清空
  * size()：返回队列包含的元素个数
  */
 
-export class Queue {
+export class Queue<T> {
   count: number
   lowestCount: number
   items: {
-    [key: number]: number
+    [key: number]: T
   }
 
   constructor() {
@@ -19,7 +20,7 @@ export class Queue {
     this.items = {}
   }
 
-  enqueue(element: number) {
+  enqueue(element: T) {
     this.items[this.count++] = element
   }
 
