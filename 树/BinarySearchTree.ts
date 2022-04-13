@@ -104,4 +104,4 @@ tree.insert(25)
 
 tree.insert(6)
 
-tree.postOrderTreeTraverse((val: any) => console.log(val))
+tree.inOrderTreeTraverse((val: any) => console.log(val))
